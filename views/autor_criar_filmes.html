@@ -33,4 +33,30 @@
         <p class="lead">Este site foi feito para minha namorada (Taís) e eu adicionarmos filmes a nossa lista de filmes.</p>
         <hr class="my-4">
         <p>Espero que a gente consiga assistir pelo menos 20% dos filmes</p>
+        <hr class="my-4">
         
+            
+            <h2 class="display-4">Adicionar Filmes</h2>
+            
+                <form action="/filmes" method="post">
+                    <label for="filme">Filme</label>
+                    <input type="text" name="filme">
+
+                    {{!-- <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario"> <br/> --}}
+
+                    <select name="usuario" id="usuario">
+                        <option value="zero">Selecione o usuário</option>
+                        <option value="LuisHenrique">Luis Henrique</option>
+                        <option value="Taís">Taís</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-primary btn-">Salvar</button>
+                </form>
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
